@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Leonida Trophy Guide — GTA VI: all 55 trophies, roadmap &amp; tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, a cited guide for each, a roadmap to the platinum, missable warnings, and a checklist that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead" id="top">
+  <div class="masthead-inner">
+    <nav class="page-nav" aria-label="Sections"><a href="#roadmap">Roadmap</a><a href="#tracker">Tracker</a><a href="#missableAlert">The missable trophy</a><a href="#sourceList">Sources</a></nav>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every one of the 55 trophies — official name, description and grade, a guide in our own words with its source cited, a roadmap to the platinum, and a checklist that remembers your progress. No online trophies. One missable. Works fully offline.</p>
+    <div class="progress-wrap" aria-label="Trophy progress">
+      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="progress-bar"><div id="progressFill"></div></div>
+      <p class="progress-grades" id="progressGrades"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="alert" id="missableAlert" aria-label="Missable trophy warning">
+    <strong>&#9888; One missable trophy.</strong>
+    <span><strong>Positive Mental Attitude</strong> — meditate at every spot across Leonida. PowerPyx and GTABase flag it as the only trophy that may be missable: one spot, Lucia&rsquo;s balcony, is only reachable in Chapter 1, and there is no mission replay. Meditate at every spot the moment you find it, and keep a manual save at the start of every chapter. GTA Vice City Hub notes no missable is confirmed — this guide flags it anyway, because the cost of missing it is a second playthrough.</span>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="section-note">Six stages, in order. Built from the official trophy descriptions: which story chapters and missions, which collectibles and counts.</p>
+    <div class="stage-grid" id="stageGrid"></div>
+  </section>
+
+  <section class="tracker" id="tracker" aria-label="Trophy tracker">
+    <h2>Trophy tracker</h2>
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or keyword&hellip;" autocomplete="off"></label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="spoilerToggle" type="checkbox"> Spoiler mode — hide story trophies until earned</label>
+      <label class="check"><input id="hideEarnedToggle" type="checkbox"> Hide earned</label>
+    </div>
+    <div class="kind-row" id="kindRow" role="group" aria-label="Filter by kind"></div>
+    <div class="toolbar">
+      <span id="shownCount"></span>
+      <span class="spacer"></span>
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="importInput" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button">Reset progress</button>
+    </div>
+    <p class="empty" id="emptyMsg" hidden>No trophies match these filters.</p>
+    <div class="trophy-list" id="trophyList"></div>
+  </section>
+
+  <section class="about" aria-label="About this guide">
+    <h2>About this guide</h2>
+    <p>The list is the 55-trophy PlayStation 5 list as published by PSNProfiles and Exophase and reported in the press on 18&ndash;19 November 2026: 1 platinum, 2 gold, 6 silver, 46 bronze, 28 hidden until earned. Every guide is written in our own words for this page; it may draw on other guides, wikis, videos and forum posts, and it names its source beside it — a source is cited, never copied. The official trophy names and descriptions are shown as PlayStation publishes them. Five trophies (In The Beginning&hellip;, Capital Offense, Bad Luck, I Guess, The Truth Is Out There, Ten Pin) have no confirmed unlock method yet in any source we found, and their guides say so plainly instead of inventing one.</p>
+    <p>Progress is stored only in this browser (localStorage). Export downloads a JSON file you can import back on any device. This page loads nothing from the network: every file it uses is part of the guide itself.</p>
+    <h3>Sources</h3>
+    <ul class="sources" id="sourceList"></ul>
+    <p class="disclaimer">Unofficial fan guide. Not affiliated with, endorsed by, or connected to Rockstar Games or Take-Two Interactive. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. No Rockstar logo, artwork or game imagery is used anywhere in this guide.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide &middot; 55 trophies &middot; made for players chasing <strong>Vice Got a Price!</strong></p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
